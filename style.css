@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     height: 100vh;
 
 }
@@ -35,13 +36,25 @@
     background-color: #1992d4;
     grid-column: 1;
     grid-row: 1 / 4;
-    display: grid;
 
+}
+
+.nav-header {
+    padding: 15px;
+    font-size: 24px;
 }
 
 .nav-links {
     display: grid;
     gap: 30px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.main-nav,
+.options-nav {
+    padding: 20px;
+    list-style: none;
 }
 
 .main-container {
@@ -49,7 +62,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 15px;
-    padding: 20px;
+    padding: 20px 30px 80px 20px;
 }
 
 .project-boxes {
