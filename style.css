@@ -69,11 +69,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    padding: 12px;
+}
+
+.project-title {
+    font-size: 14px;
+}
+
+.project-text {
+    font-size: 12px;
 }
 
 .user-project-box {
     background-color: #fff;
+    padding: 20px;
+    display: grid;
+    border-radius: 6px;
+    /* box-shadow: 1px 1px 10px grey; */
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
 
+.user-project-icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-self: end;
+    gap: 24px;
+    padding-right: 20px;
 }
 
 .main-container-sidebar {
@@ -86,6 +109,9 @@
     background-color: white;
     display: grid;
     gap: 5px;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 20px;
 }
 
 .main-container-item {
