@@ -35,6 +35,13 @@
     background-color: #1992d4;
     grid-column: 1;
     grid-row: 1 / 4;
+    display: grid;
+
+}
+
+.nav-links {
+    display: grid;
+    gap: 30px;
 }
 
 .main-container {
@@ -76,4 +83,5 @@
 .container-header {
     display: grid;
     align-self: end;
+    padding-bottom: 10px;
 }
