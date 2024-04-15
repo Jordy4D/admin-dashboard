@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto" type="text/css">
 </head>
 <body>
     <div class="container">
@@ -39,9 +40,9 @@
         </div>
         <div class="main-container">
             <div class="main-container-item" id="projects">
-                <div class="container-header" id="projects-header">Projects</div>
+                <div class="container-header" id="projects-header">Your Projects</div>
                 <div class="project-boxes">
-                    <div class="user-project-box" id="user-project-box1">
+                    <div class="user-project-card" id="user-project-box1">
                         <h3 class="project-title">Project 1</h3>
                         <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="user-project-icons">
@@ -50,7 +51,7 @@
                             <div class="project-icon" id="fork-icon">F</div>
                         </div>
                     </div>
-                    <div class="user-project-box" id="user-project-box2">
+                    <div class="user-project-card" id="user-project-box2">
                         <h3 class="project-title">Project 2</h3>
                         <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="user-project-icons">
@@ -59,7 +60,7 @@
                             <div class="project-icon" id="fork-icon">F</div>
                         </div>
                     </div>
-                    <div class="user-project-box" id="user-project-box3">
+                    <div class="user-project-card" id="user-project-box3">
                         <h3 class="project-title">Project 3</h3>
                         <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="user-project-icons">
@@ -68,7 +69,7 @@
                             <div class="project-icon" id="fork-icon">F</div>
                         </div>
                     </div>
-                    <div class="user-project-box" id="user-project-box4">
+                    <div class="user-project-card" id="user-project-box4">
                         <h3 class="project-title">Project 4</h3>
                         <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="user-project-icons">
@@ -77,7 +78,7 @@
                             <div class="project-icon" id="fork-icon">F</div>
                         </div>
                     </div>
-                    <div class="user-project-box" id="user-project-box5">
+                    <div class="user-project-card" id="user-project-box5">
                         <h3 class="project-title">Project 5</h3>
                         <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="user-project-icons">
@@ -86,7 +87,7 @@
                             <div class="project-icon" id="fork-icon">F</div>
                         </div>
                     </div>
-                    <div class="user-project-box" id="user-project-box6">
+                    <div class="user-project-card" id="user-project-box6">
                         <h3 class="project-title">Project 6</h3>
                         <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="user-project-icons">
@@ -101,18 +102,51 @@
                 <div class="main-container-item" id="announcements">
                     <div class="container-header" id="announcements-header">Announcements</div>
                     <div class="sidebar-container">
-                        <div class="announcement-boxes" id="announcementbox1">announcement1</div>
-                        <div class="announcement-boxes" id="announcementbox2">announcement2</div>
-                        <div class="announcement-boxes" id="announcementbox3">announcement3</div>
+                        <div class="announcement-boxes" id="announcementbox1">
+                            <h3>announcement1</h3>
+                            <p class="announcement-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="announcement-boxes" id="announcementbox2">
+                            <h3>announcement2</h3>
+                            <p class="announcement-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="announcement-boxes" id="announcementbox3">
+                            <h3>announcement3</h3>
+                            <p class="announcement-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="main-container-item" id="trending">
                     <div class="container-header" id="trending-header">Trending</div>
                         <div class="sidebar-container">
-                            <div class="trending-user-box" id="trending-user-box1">user1</div>
-                            <div class="trending-user-box" id="trending-user-box2">user2</div>
-                            <div class="trending-user-box" id="trending-user-box3">user3</div>
-                            <div class="trending-user-box" id="trending-user-box4">user4</div>
+                            <div class="trending-user-box" id="trending-user-box1">
+                                <div class="trending-profile-image">img</div>
+                                <div class="trending-user-info">
+                                    <div class="trending-username">@tegan</div>
+                                    <p class="trending-project-name">World Peace Builder</p>
+                                </div>
+                            </div>
+                            <div class="trending-user-box" id="trending-user-box2">
+                                <div class="trending-profile-image">img</div>
+                                <div class="trending-user-info">
+                                    <div class="trending-username">@morgan</div>
+                                    <p class="trending-project-name">Super Cool Project</p>
+                                </div>
+                            </div>
+                            <div class="trending-user-box" id="trending-user-box3">
+                                <div class="trending-profile-image">img</div>
+                                <div class="trending-user-info">
+                                    <div class="trending-username">@kendall</div>
+                                    <p class="trending-project-name">Life Changing App</p>
+                                </div>
+                            </div>
+                            <div class="trending-user-box" id="trending-user-box4">
+                                <div class="trending-profile-image">img</div>
+                                <div class="trending-user-info">
+                                    <div class="trending-username">@alex</div>
+                                    <p class="trending-project-name">No Traffic Maker</p>
+                                </div>
+                            </div>
                         </div>
                 </div>
             </div>

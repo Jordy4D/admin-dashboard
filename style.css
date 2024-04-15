@@ -1,12 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
+}
+
+p {
+    color: #696969;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
     height: 100vh;
 
@@ -70,24 +74,29 @@
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     padding: 12px;
+    
 }
 
 .project-title {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .project-text {
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.user-project-box {
+.user-project-card {
     background-color: #fff;
     padding: 20px;
+    overflow: hidden;
     display: grid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px, inset gold 10px 0 0 0;
+    
+
     border-radius: 6px;
-    /* box-shadow: 1px 1px 10px grey; */
-    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+
+
 }
 
 .user-project-icons {
@@ -103,6 +112,7 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
+    padding: 12px;
 }
 
 .sidebar-container {
@@ -117,10 +127,33 @@
 .main-container-item {
     display: grid;
     grid-template-rows: max-content;
+    
 }
 
 .container-header {
     display: grid;
     align-self: end;
     padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 800;
 }
+
+.announcement-boxes h3 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.announcement-text {
+    font-size: 12px;
+}
+
+.trending-user-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trending-project-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
