@@ -93,7 +93,7 @@ p {
 }
 
 #large-user-name p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: black;
     font-weight: bold;
 }
@@ -119,10 +119,15 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     /* padding: 12px; */
     background-color: #f0b429;
+}
+
+#small-user-logo img {
+    height: 30px;
+    width: 30px;
 }
 
 #large-user-logo {
@@ -130,10 +135,15 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     padding: 12px;
     background-color: #f0b429;
+}
+
+#large-user-logo img {
+    height: 40px;
+    width: 40px;
 }
 
 #search-input {
@@ -147,14 +157,15 @@ p {
 
 .start-buttons {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
+
 }
 
 .start-buttons {
-    gap: 20px;
-    padding: 0 30px;
+    gap: 15px;
+    padding: 0 20px;
 }
 
 .start-buttons button {
@@ -443,21 +454,34 @@ hr {
 
 .trending-profile-image {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     height: 50px;
     width: 50px;
     /* padding: 12px; */
     background-color: #f0b429;
+}
 
+#trending-user-box1 {
+    background-color: #e0f2fe;
+}
+
+#trending-user-box3 {
+    background-color: #a3a3a3;
+}
+
+#trending-user-box4 {
+    background-color: #fda4af;
 }
 
 .trending-profile-image img {
     display: grid;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+    /* align-self: center;
+    justify-items: center; */
+    /* border-radius: 50%; */
+    height: 35px;
+    width: 35px;
 
     /* height: 75%;
     width: 75%; */
