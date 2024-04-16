@@ -20,11 +20,11 @@ p {
     background-color: #fff;
     grid-column: 2;
     grid-row: 1;
-    min-height: 150px;
-    max-height: 200px;
+    /* min-height: 150px;
+    max-height: 200px; */
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 
@@ -68,6 +68,7 @@ p {
 }
 
 #greet {
+    font-size: .75em;
     align-self: end;
 }
 
@@ -77,7 +78,7 @@ p {
 }
 
 #large-user-name.username {
-    font-size: 3em;
+    font-size: 2em;
 
 }
 
@@ -100,7 +101,7 @@ p {
 
 .start-buttons {
     gap: 20px;
-    padding: 30px;
+    padding: 0 30px;
 }
 
 .start-buttons button {
@@ -142,7 +143,7 @@ p {
 
 #nav-header {
     padding: 15px;
-    font-size: 24px;
+    font-size: 1.5em;
     
 }
 
@@ -151,7 +152,7 @@ p {
     display: grid;
     /* align-items: start; */
     align-self: start;
-    gap: 30px;
+    gap: 10px;
     color: #fff;
     font-weight: 800;
     line-height: 30px;
@@ -191,7 +192,7 @@ p {
 }
 
 .project-text {
-    font-size: 14px;
+    font-size: .75em;
     padding-top: 5px;
 }
 
@@ -202,7 +203,7 @@ p {
     padding-right: 20px;
     overflow: hidden;
     display: grid;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px, inset gold 10px 0 0 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px, inset #f0b429 10px 0 0 0;
     border-radius: 6px;
     
 
@@ -256,7 +257,6 @@ div#trending-header.container-header {
     /* padding-bottom: 10px; */
     padding-left: 12px;
     font-size: 1.2em;
-    /* font-size: 24px; */
     font-weight: 800;
 }
 
@@ -267,13 +267,20 @@ div#trending-header.container-header {
     gap: 3px;
 }
 
+hr {
+    background-color:lightgray;
+    margin: 8px 0;
+    height: 1px;
+    border:none;
+}
+
 .announcement-boxes h3 {
-    font-size: 12px;
+    font-size: .75em;
     font-weight: 800;
 }
 
 .announcement-text {
-    font-size: 10px;
+    font-size: .7em;
 }
 
 .trending-user-box {
@@ -282,12 +289,12 @@ div#trending-header.container-header {
 }
 
 .trending-username {
-    font-size: 14px;
+    font-size: .85em;
     font-weight: 500;
 }
 
 .trending-project-name {
-    font-size: 12px;
+    font-size: .7em;
     font-weight: 500;
 }
 
