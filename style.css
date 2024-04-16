@@ -98,7 +98,13 @@ p {
     font-weight: bold;
 }
 
-
+#search-icon {
+    /* background-image: url(assets/bell-ring-outline.svg); */
+    height: 24px;
+    width: 24px;
+    /* filter: brightness(0) invert(1); */
+    
+}
 
 #notification-icon {
     background-image: url(assets/bell-ring-outline.svg);
