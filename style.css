@@ -23,13 +23,34 @@ p {
     min-height: 150px;
     max-height: 200px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
 }
 
-.utility-bar, 
+
+
+.search-bar {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: auto 1fr;
+    padding: 20px 20px 20px 40px;
+    gap: 10px;
+    /* flex: auto; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.utilities {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
 .options-bar {
     display: grid;
+    grid-row: 2;
     grid-template-columns: 2fr 1fr;
     grid-auto-flow: column;
 }
@@ -37,7 +58,7 @@ p {
 .greeting-bar {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: center;
+    /* align-items: center; */
     padding-left: 40px;
 }
 
@@ -52,21 +73,14 @@ p {
 
 #large-user-logo {
     padding-right: 20px;
-}
-
-#large-user-name {
     align-self: center;
 }
 
-.search-bar {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    padding: 20px 20px 20px 40px;
-    gap: 10px;
-    /* flex: auto; */
-    align-items: center;
-    justify-content: center;
+#large-user-name.username {
+    font-size: 3em;
+
 }
+
 
 #search-input {
     width: 100%;
@@ -103,18 +117,40 @@ p {
 
 .sidebar {
     background-color: #1992d4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-column: 1;
     grid-row: 1 / 4;
 
 }
 
-.nav-header {
-    padding: 15px;
-    font-size: 24px;
+
+.sidebar-icon {
+    grid-column: 1;
 }
 
-.nav-links {
+
+
+.sidebar-text,
+.sidebar-text p {
     display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    /* grid-column: 2; */
+}
+
+#nav-header {
+    padding: 15px;
+    font-size: 24px;
+    
+}
+
+.nav-links,
+.nav-links p {
+    display: grid;
+    /* align-items: start; */
+    align-self: start;
     gap: 30px;
     color: #fff;
     font-weight: 800;
@@ -122,9 +158,13 @@ p {
 }
 
 .main-nav,
-.options-nav {
+#options-nav {
     padding: 20px;
     list-style: none;
+}
+
+#options-nav {
+    grid-row: 3;
 }
 
 .main-container {
@@ -132,34 +172,37 @@ p {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 15px;
-    padding: 20px 30px 80px 20px;
+    padding: 30px 30px 80px 12px;
     box-shadow: inset 0px 15px 15px -20px rgba(0,0,0,0.45);
 }
 
 .project-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 30px;
     padding: 12px;
+    padding-right: 0;
     
 }
 
 .project-title {
-    font-size: 18px;
+    font-size: 1em;
+    align-self: end;
 }
 
 .project-text {
     font-size: 14px;
+    padding-top: 5px;
 }
 
 .user-project-card {
     background-color: #fff;
-    padding: 20px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
     overflow: hidden;
     display: grid;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px, inset gold 10px 0 0 0;
-    
-
     border-radius: 6px;
     
 
@@ -180,6 +223,8 @@ p {
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
     padding: 12px;
+    padding-left: 5px;
+    padding-right: 0;
 }
 
 .sidebar-container {
@@ -197,13 +242,25 @@ p {
     
 }
 
+div#announcements-header.container-header, 
+div#trending-header.container-header {
+    margin-top: -10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+
+}
+
 .container-header {
     display: grid;
     align-self: end;
-    padding-bottom: 10px;
-    font-size: 24px;
+    /* padding-bottom: 10px; */
+    padding-left: 12px;
+    font-size: 1.2em;
+    /* font-size: 24px; */
     font-weight: 800;
 }
+
+
 
 .announcement-boxes {
     display: grid;
